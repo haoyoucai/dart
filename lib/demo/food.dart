@@ -10,9 +10,11 @@ class Food {
     _calorie = value;
   }
 
-  Food.fromJson(Map data) {
-    name = data['name'];
-    calorie = data['calorie'];
+  Food.fromJson(Map<String,dynamic> data)
+      : name = data['name'],
+        _calorie = data['calorie'] {
+//    name = data['name'];
+//    calorie = data['calorie'];
   }
 
   @override
